@@ -1,3 +1,3 @@
 ### SeriousLose
 
-### 个人工具
+### localStorage扩展
