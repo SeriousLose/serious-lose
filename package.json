@@ -4,7 +4,9 @@
   "description": "",
   "main": "./dist/storage.js",
   "keywords": [
-    "localStorage","typescript","sessionStorage"
+    "localStorage",
+    "typescript",
+    "sessionStorage"
   ],
   "scripts": {
     "test": "jest",
