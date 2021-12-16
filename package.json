@@ -1,6 +1,6 @@
 {
   "name": "serious-lose",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "release/storage.js",
   "types": "release/storage.d.ts",
