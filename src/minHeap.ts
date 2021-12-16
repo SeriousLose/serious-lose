@@ -3,7 +3,7 @@ import { remove } from './storage';
 
 let minHeap: any = []; // 用于实现优先队列的最小堆
 let minHeapCount = 0; // 最小堆中的元素个数
-let timer: any = null;
+let timer: any = null; // 计时器
 
 /**
  * 根据对象 生成优先队列
@@ -23,7 +23,7 @@ export function createMinHeapByLocalInfo(info: any) {
     return;
   }
   heapfy(localInfoArr);
-  createTimer();
+  createTimer(); // 创建计时器
 }
 
 // 生成定时器
@@ -31,12 +31,11 @@ function createTimer() {
   if (timer) {
     clearTimeout(timer);
   }
-
-  let time = minHeap[0].time;
+  let time = minHeap[0].time; // 获取最小堆 ,堆顶,时间
   timer = setTimeout(() => {
-    let timedueItem = shift();
-    remove(timedueItem.key);
-    observers.trigger(timedueItem.key);
+    let timeDueItem = shift(); // 获取需要删除key
+    remove(timeDueItem.key); // 删除key
+    observers.trigger(timeDueItem.key); // 消息通知
   }, time);
 }
 
@@ -54,7 +53,11 @@ function heapfy(arr: any) {
   }
 }
 
-// 优先队列出队操作
+/**
+ * @description: 删除堆顶
+ * @param {*}
+ * @return {*}
+ */
 function shift() {
   let mid = minHeap[0];
   minHeapCount--;
