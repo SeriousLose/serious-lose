@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, './dist/'),  //获取输出路径
     library: 'storage',
     libraryTarget: 'umd',
-    // libraryExport: "default"
+    libraryExport: "default"
   },
   module: {
     rules: [{
