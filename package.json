@@ -2,7 +2,8 @@
   "name": "serious-lose",
   "version": "1.0.1",
   "description": "",
-  "main": "./dist/storage.js",
+  "main": "release/storage.js",
+  "types": "release/storage.d.ts",
   "keywords": [
     "localStorage",
     "typescript",
