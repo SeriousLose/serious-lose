@@ -58,8 +58,9 @@
       <button id="btn3" class="btn">按钮三</button>
       <button id="btn4" class="btn">按钮四</button>
     </div>
-    <script src="../dist/storage.js"></script>
+    <script src="../release/storage.js"></script>
     <script>
+      console.log(storage.save('name', 'SeriousLose', 10000));
       window.onload = function () {
         var btn1 = document.getElementById('btn1');
         var btn2 = document.getElementById('btn2');
