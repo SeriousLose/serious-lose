@@ -19,7 +19,7 @@
     "url": "https://github.com/SeriousLose/serious-lose/issues"
   },
   "homepage": "https://github.com/SeriousLose/serious-lose/blob/master/README.md",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.5",

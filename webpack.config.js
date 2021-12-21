@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.ts',   // 打包对入口文件，期望打包对文件入口。 这里配置tsc05.ts的位置
