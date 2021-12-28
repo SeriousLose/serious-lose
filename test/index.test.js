@@ -77,5 +77,23 @@ test('测试取消storage过期订阅_off时指定函数，取消所有订阅该
   }, 300)
 })
 
+test('session存入数据', () => {
+  storage.session.save('test9', 'test9');
+  expect(storage.session.get('test9')).toBe('test9')
+});
+
+test('session删除数据', () => {
+  storage.session.save('test10', 'test10');
+  expect(storage.session.remove('test10')).not.toBe('test10')
+});
+
+test('session清除数据', () => {
+  storage.session.save('test11', 'test11');
+  storage.session.save('test12', 'test12');
+  storage.session.clear();
+  expect(storage.session.get('test11')).not.toBe('test11')
+  expect(storage.session.get('test12')).not.toBe('test12')
+})
+
 
 
