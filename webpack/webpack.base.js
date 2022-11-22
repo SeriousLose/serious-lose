@@ -19,4 +19,8 @@ module.exports = {
   resolve: {
     extensions: ['.ts']      // 解析对文件格式
   },
+  optimization: {
+    // 模块只导出被使用的成员
+    usedExports: true
+  }
 }
